@@ -152,6 +152,58 @@
         padding: 1rem;
       }
     }
+    @media (max-width: 600px) {
+      header {
+        padding: 1.2rem 0 0.7rem 0;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      .main-photo {
+        width: 120px;
+        height: 120px;
+      }
+      .container {
+        padding: 0.5rem;
+        gap: 1rem;
+      }
+      .form-section {
+        padding: 1rem;
+      }
+      .logo-adrian {
+        max-width: 220px;
+      }
+      .logo-remax-large {
+        max-width: 140px;
+      }
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin: 1rem 0 0.5rem 0;
+    }
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #f1f5f9;
+      color: #2563eb;
+      font-size: 1.5rem;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      border: 1.5px solid #e5e7eb;
+    }
+    .social-icons a:hover {
+      background: #2563eb;
+      color: #fff;
+    }
     .logo-adrian {
       display: block;
       margin: 0 auto 0.5rem auto;
@@ -183,9 +235,20 @@
 </head>
 <body>
   <header>
-    <img src="logo-adrian.png" alt="Logo Adrian Leon" class="logo-adrian">
+    <a href="https://www.adrianleon.ca" aria-label="Accueil Adrian Leon"><img src="logo-adrian.png" alt="Logo Adrian Leon" class="logo-adrian"></a>
+    <div class="social-icons" aria-label="Réseaux sociaux">
+      <a href="https://www.facebook.com/profile.php?id=61563811366431&locale=fr_CA" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.406.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
+      </a>
+      <a href="https://www.instagram.com/adrianleon.immobilier" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 2.25a6.25 6.25 0 1 1 0 12.5 6.25 6.25 0 0 1 0-12.5zm0 1.5a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5zm5.25 1.25a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/adrian-leon-486938172/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+      </a>
+    </div>
     <h1>Vendez ou achetez en toute confiance</h1>
-    <h2>Adrian Leon – Courtier Immobilier résidentiel | RE/MAX Bonjour</h2>
+    <h2>Adrian Leon – Courtier Immobilier résidentiel | RE/MAX Bonjour </h2>
   </header>
   <div class="intro-section" style="max-width:800px;margin:2rem auto 0 auto;text-align:center;font-size:1.15rem;line-height:1.7;">
     <p>
@@ -255,6 +318,20 @@
     <img src="logo.png" alt="remaxbonjour" class="logo-remax-large">
   </div>
   <footer>
+    <div class="social-icons" aria-label="Réseaux sociaux">
+      <a href="https://www.facebook.com/adrianleonremax" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.406.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
+      </a>
+      <a href="https://www.instagram.com/adrianleonremax" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.497 5.782 2.225 7.148 2.163 8.414 2.105 8.794 2.094 12 2.094m0-2.163C8.741 0 8.332.012 7.052.07 5.771.128 4.635.4 3.661 1.374c-.974.974-1.246 2.241-1.308 3.608C2.175 8.353 2.163 8.733 2.163 12s.012 3.584.07 4.85c.062 1.366.334 2.633 1.308 3.608.974.974 2.241 1.246 3.608 1.308 1.266.058 1.646.069 4.85.069s3.584-.012 4.85-.07c1.366-.062 2.633-.334 3.608-1.308.974-.974 1.246-2.241 1.308-3.608.058-1.266.069-1.646.069-4.85s-.012-3.584-.07-4.85c-.062-1.366-.334-2.633-1.308-3.608-.974-.974-2.241-1.246-3.608-1.308C15.647.012 15.267 0 12 0z"/><path d="M12 5.838A6.162 6.162 0 0 0 5.838 12 6.162 6.162 0 0 0 12 18.162 6.162 6.162 0 0 0 18.162 12 6.162 6.162 0 0 0 12 5.838zm0 10.162A3.999 3.999 0 1 1 12 8a3.999 3.999 0 0 1 0 7.999zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/adrianleonremax" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+      </a>
+      <a href="https://wa.me/14505301115" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.029-.967-.271-.099-.469-.148-.666.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.151-.174.2-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.666-1.611-.912-2.207-.242-.579-.487-.5-.666-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.271.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.363.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.124-.271-.198-.57-.347m-5.421 7.617h-.001a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.455 4.436-9.89 9.893-9.89 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.896 6.994c-.003 5.456-4.438 9.891-9.893 9.891m8.413-18.306a11.815 11.815 0 0 0-8.413-3.49c-6.627 0-12 5.373-12 11.998 0 2.121.555 4.199 1.607 6.032l-1.687 6.163a1 1 0 0 0 1.237 1.237l6.127-1.654a11.93 11.93 0 0 0 4.524.863h.005c6.627 0 12-5.373 12-11.998 0-3.192-1.244-6.197-3.509-8.651z"/></svg>
+      </a>
+    </div>
     © 2024 Adrian Leon – Courtier Immobilier résidentiel | RE/MAX Bonjour<br>
     Contact&nbsp;: <a href="mailto:adrianleon@remaxbonjour.com" style="color:#2563eb;">adrianleon@remaxbonjour.com</a><br>
     Téléphone&nbsp;: <a href="tel:14505301115" style="color:#2563eb;">(450) 530-1115</a>
